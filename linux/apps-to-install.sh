@@ -55,11 +55,21 @@ sudo snap install postman
 sudo snap install dbeaver-ce
 
 echo " "
+if ! [ -x "$(command -v /usr/bin/google-chrome-stable)" ]; then
+    echo downloading google chrome...
+    curl -o ~/Downloads/google-chrome-stable.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    echo installing google chrome...
+    sudo apt install ~/Downloads/google-chrome-stable.deb
+else
+    echo google chrome is already installed
+fi
+
+echo " "
 if ! [ -x "$(command -v code)" ]; then
     echo downloading vscode...
-    curl -o vscode.deb https://az764295.vo.msecnd.net/stable/97dec172d3256f8ca4bfb2143f3f76b503ca0534/code_1.74.3-1673284829_amd64.deb
+    curl -o ~/Downloads/vscode.deb https://az764295.vo.msecnd.net/stable/97dec172d3256f8ca4bfb2143f3f76b503ca0534/code_1.74.3-1673284829_amd64.deb
     echo installing vscode...
-    sudo apt install ./vscode.deb
+    sudo apt install ~/Downloads/vscode.deb
 else
     echo vscode is already installed
 fi

@@ -21,7 +21,7 @@ sudo ./apps-to-install.sh
 To install all the applications listed on the script you need to allow executing scripts on windows by running this command:
 
 ```cmd
-Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
 then
