@@ -7,7 +7,7 @@ This repo will hold my linux and windows work environement.
 To install all the applications listed on the script use:
 
 ```shell
-curl -s https://github.com/ahmed-habbachi/work-environement/blob/main/linux/apps-to-install.sh | bash
+curl -s https://raw.githubusercontent.com/ahmed-habbachi/work-environement/main/linux/apps-to-install.sh | bash
 ```
 
 Or download the script and add/remove the applications as you want then just:
@@ -27,7 +27,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 then
 
 ```cmd
-iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/ahmed-habbachi/work-environement/blob/main/windows/apps-to-install.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ahmed-habbachi/work-environement/main/windows/apps-to-install.ps1'))
 ```
 
 Or download the script and add/remove the applications as you want then just:
