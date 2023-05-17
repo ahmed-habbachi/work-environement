@@ -4,6 +4,13 @@ This repo will hold my linux and windows work environement.
 
 ## Linux (ubuntu 22.04)
 
+Before lunching the installation script insure that curl is installed or install it via:
+
+```shell
+sudo apt-get update
+sudo apt-get install curl
+```
+
 To install all the applications listed on the script use:
 
 ```shell
