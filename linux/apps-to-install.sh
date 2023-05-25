@@ -39,6 +39,8 @@ while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
     gnome-tweaks
     synaptic
     ubuntu-restricted-extras
+    flatpak
+    gnome-software-plugin-flatpak
 EOF
 )
 
